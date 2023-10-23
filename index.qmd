@@ -15,6 +15,6 @@ Here are some random normals:
 ```{r}
 library(tidyverse)
 d <- tibble(z = rnorm(40, 10, 3))
-ggplot(d, aes(x = z)) + stat_qq() + stat_qq_line()
+ggplot(d, aes(sample = z)) + stat_qq() + stat_qq_line()
 ```
 
