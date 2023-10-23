@@ -9,3 +9,12 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 ```{r}
 1 + 1
 ```
+
+Here are some random normals:
+
+```{r}
+library(tidyverse)
+d <- tibble(z = rnorm(40, 10, 3))
+ggplot(d, aes(x = z)) + stat_qq() + stat_qq_line()
+```
+
