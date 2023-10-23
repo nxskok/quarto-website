@@ -5,8 +5,11 @@ title: "quarto-website"
 Here are some random normals:
 
 ```{r}
+#| echo: false
+#| message: false
 library(tidyverse)
 d <- tibble(z = rnorm(40, 10, 3))
 ggplot(d, aes(sample = z)) + stat_qq() + stat_qq_line()
 ```
 
+These actually *are* normal, so any deviations from the line are just chance.
