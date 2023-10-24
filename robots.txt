@@ -1,1 +1,1 @@
-Sitemap: https://nxskok.github.io/quarto-website/sitemap.xml
+Sitemap: https://github.com/nxskok/quarto-website/sitemap.xml

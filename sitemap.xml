@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nxskok.github.io/quarto-website/about.html</loc>
-    <lastmod>2023-10-24T02:27:40.944Z</lastmod>
+    <loc>https://github.com/nxskok/quarto-website/plott.html</loc>
+    <lastmod>2023-10-24T16:13:25.927Z</lastmod>
   </url>
   <url>
-    <loc>https://nxskok.github.io/quarto-website/index.html</loc>
-    <lastmod>2023-10-24T02:27:42.712Z</lastmod>
+    <loc>https://github.com/nxskok/quarto-website/index.html</loc>
+    <lastmod>2023-10-24T16:13:29.195Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/nxskok/quarto-website/about.html</loc>
+    <lastmod>2023-10-24T16:13:29.683Z</lastmod>
   </url>
 </urlset>
