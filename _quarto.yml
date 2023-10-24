@@ -8,7 +8,7 @@ website:
       - href: index.qmd
         text: Home
       - href: about.qmd
-        text: Dw i ddim yn siarad Cymraeg
+        text: Cymraeg
       - href: plott.qmd
         text: Plotting functions
 

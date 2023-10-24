@@ -46,6 +46,8 @@ ggplot() +
                   midpoint = mid)) +
   xlim(mid - 3 * gr, mid + 3 * gr) +
   geom_vline(xintercept = mid, linetype = "dashed") +
+  geom_text() +
+  annotate("text", label = "paste(\"midpoint =\", mid)", x = mid, y = sup/2, parse = TRUE) +
   geom_hline(yintercept = 0, linetype = "dashed") +
   geom_hline(yintercept = sup, linetype = "dashed") +
   labs(x = "x", y = "logistic")
