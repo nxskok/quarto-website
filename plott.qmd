@@ -1,0 +1,53 @@
+---
+title: "plot functions"
+format: html
+---
+
+[Source](https://en.osc.ac/codehub/1-how-to-plot-functions-with-ggplot2/)
+
+
+## packages
+
+```{r}
+library(tidyverse)
+```
+
+## plotting log
+
+
+```{r}
+ggplot() + geom_function(fun = log) +
+  xlim(c(0, 1000)) +
+  labs(x = "input", y = "output")
+```
+
+## logistic curve
+
+but writing function first
+
+```{r}
+lgstc <- function(x, supremum, growth_rate, midpoint) {
+  lp <- growth_rate * (x - midpoint)
+  supremum / (1 + exp(-lp))
+}
+```
+
+now make the graph, with parameter values:
+
+```{r}
+mid <- 6
+sup <- 1
+gr <- 1.5
+ggplot() + 
+  geom_function(fun = lgstc, 
+                args = list(
+                  supremum = sup,
+                  growth_rate = gr,
+                  midpoint = mid)) +
+  xlim(mid - 3 * gr, mid + 3 * gr) +
+  geom_vline(xintercept = mid, linetype = "dashed") +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_hline(yintercept = sup, linetype = "dashed") +
+  labs(x = "x", y = "logistic")
+```
+

@@ -9,6 +9,8 @@ website:
         text: Home
       - href: about.qmd
         text: Dw i ddim yn siarad Cymraeg
+      - href: plott.qmd
+        text: Plotting functions
 
 format:
   html:
