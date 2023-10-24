@@ -12,4 +12,4 @@ d <- tibble(z = rnorm(40, 10, 3))
 ggplot(d, aes(sample = z)) + stat_qq() + stat_qq_line()
 ```
 
-These actually *are* normal, so any deviations from the line are just chance.
+These actually *are* normal, so any deviations from the line are just chance. Despite what you may think.

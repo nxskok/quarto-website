@@ -4,9 +4,7 @@ title: "About"
 
 About this site
 
-```{r}
-1 + 1
-```
-
-hahaha
-
+Ry'n ni yma o hyd  
+Er gwaetha pawb a phopeth  
+Er gwaetha pawb a phopeth  
+Ry'n ni yma o hyd  
