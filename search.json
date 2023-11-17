@@ -1,31 +1,10 @@
 [
   {
-    "objectID": "plott.html",
-    "href": "plott.html",
-    "title": "plot functions",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Cymraeg",
     "section": "",
-    "text": "Source"
-  },
-  {
-    "objectID": "plott.html#packages",
-    "href": "plott.html#packages",
-    "title": "plot functions",
-    "section": "packages",
-    "text": "packages\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.3     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.0\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors"
-  },
-  {
-    "objectID": "plott.html#plotting-log",
-    "href": "plott.html#plotting-log",
-    "title": "plot functions",
-    "section": "plotting log",
-    "text": "plotting log\n\nggplot() + geom_function(fun = log) +\n  xlim(c(0, 1000)) +\n  labs(x = \"input\", y = \"output\")"
-  },
-  {
-    "objectID": "plott.html#logistic-curve",
-    "href": "plott.html#logistic-curve",
-    "title": "plot functions",
-    "section": "logistic curve",
-    "text": "logistic curve\nbut writing function first\n\nlgstc &lt;- function(x, supremum, growth_rate, midpoint) {\n  lp &lt;- growth_rate * (x - midpoint)\n  supremum / (1 + exp(-lp))\n}\n\nnow make the graph, with parameter values:\n\nmid &lt;- 6\nsup &lt;- 1\ngr &lt;- 1.5\nggplot() + \n  geom_function(fun = lgstc, \n                args = list(\n                  supremum = sup,\n                  growth_rate = gr,\n                  midpoint = mid)) +\n  xlim(mid - 3 * gr, mid + 3 * gr) +\n  geom_vline(xintercept = mid, linetype = \"dashed\") +\n  geom_hline(yintercept = 0, linetype = \"dashed\") +\n  geom_hline(yintercept = sup, linetype = \"dashed\") +\n  labs(x = \"x\", y = \"logistic\")"
+    "text": "Ry’n ni yma o hyd\nEr gwaetha pawb a phopeth\nEr gwaetha pawb a phopeth\nEr gwaetha pawb a phopeth\nRy’n ni yma o hyd\n(er gwaetha ’rhen Fagi a’i chriw)"
   },
   {
     "objectID": "index.html",
@@ -33,12 +12,5 @@
     "title": "quarto-website",
     "section": "",
     "text": "Here are some random normals:\n\n\n\n\n\nThese actually are normal, so any deviations from the line are just chance. Despite what you may think."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Cymraeg",
-    "section": "",
-    "text": "Ry’n ni yma o hyd\nEr gwaetha pawb a phopeth\nEr gwaetha pawb a phopeth\nEr gwaetha pawb a phopeth\nRy’n ni yma o hyd\n(er gwaetha ’rhen Fagi a ei chriw)"
   }
 ]
